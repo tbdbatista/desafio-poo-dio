@@ -5,11 +5,11 @@ Esse repositório contém o projeto desenvolvido durante o desafio proposto pela
 
 ## Pré-Requisitos
 
-. Conhecimento da sintaxe da linguagem Java
-. Java JDK 11
-. IDE para desenvolvimento Java (recomendamos o IntelliJ)
-. Git
-. Conta no GitHub
+* Conhecimento da sintaxe da linguagem Java
+* Java JDK 11
+* IDE para desenvolvimento Java (recomendamos o IntelliJ)
+* Git
+* Conta no GitHub
 
 ### Passo-a-Passo
 1. Abstração do Domínio Bootcamp e Modelagem dos Atributos e Métodos
