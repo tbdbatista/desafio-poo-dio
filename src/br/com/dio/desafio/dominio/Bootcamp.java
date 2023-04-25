@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class Bootcamp {
 
-    private String name;
+    private String title;
     private String description;
     private final LocalDate startDate = LocalDate.now();
     private final LocalDate finalDate = startDate.plusDays(45);
@@ -16,12 +16,12 @@ public class Bootcamp {
     private Set<Developer> subscribedDevelopers = new HashSet<>();
     private Set<Content> bootcampContents = new LinkedHashSet<>();
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {
@@ -61,7 +61,7 @@ public class Bootcamp {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Bootcamp bootcamp = (Bootcamp) o;
-        return Objects.equals(name, bootcamp.name)
+        return Objects.equals(title, bootcamp.title)
                 && Objects.equals(description, bootcamp.description)
                 && Objects.equals(startDate, bootcamp.startDate)
                 && Objects.equals(finalDate, bootcamp.finalDate)
@@ -71,6 +71,6 @@ public class Bootcamp {
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, description, startDate, finalDate, subscribedDevelopers, bootcampContents);
+        return Objects.hash(title, description, startDate, finalDate, subscribedDevelopers, bootcampContents);
     }
 }
