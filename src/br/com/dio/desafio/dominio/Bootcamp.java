@@ -61,7 +61,12 @@ public class Bootcamp {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Bootcamp bootcamp = (Bootcamp) o;
-        return Objects.equals(name, bootcamp.name) && Objects.equals(description, bootcamp.description) && Objects.equals(startDate, bootcamp.startDate) && Objects.equals(finalDate, bootcamp.finalDate) && Objects.equals(subscribedDevelopers, bootcamp.subscribedDevelopers) && Objects.equals(bootcampContents, bootcamp.bootcampContents);
+        return Objects.equals(name, bootcamp.name)
+                && Objects.equals(description, bootcamp.description)
+                && Objects.equals(startDate, bootcamp.startDate)
+                && Objects.equals(finalDate, bootcamp.finalDate)
+                && Objects.equals(subscribedDevelopers, bootcamp.subscribedDevelopers)
+                && Objects.equals(bootcampContents, bootcamp.bootcampContents);
     }
 
     @Override
